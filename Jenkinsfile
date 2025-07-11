@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.8.6' // Ensure this version is configured in Jenkins
-        jdk 'JDK 11'      // Ensure this JDK version is configured in Jenkins
+        maven 'Maven382' // Ensure this version is configured in Jenkins
+            // Ensure this JDK version is configured in Jenkins
     }
 
     stages {
@@ -23,6 +23,7 @@ pipeline {
 
         stage('Test') {
             steps {
+                sleep 300s
                 // Run unit tests
                 sh 'mvn test'
             }
