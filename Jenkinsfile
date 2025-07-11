@@ -23,8 +23,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                // Optional delay before running tests
-                sleep time: 300, unit: 'SECONDS'
+                
                 // Run unit tests
                 sh 'mvn test'
             }
