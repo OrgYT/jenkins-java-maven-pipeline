@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven32' // Ensure this Maven version is configured in Jenkins
+        maven 'M32' // Ensure this Maven version is configured in Jenkins
         // Note: Add JDK configuration here if needed
     }
 
